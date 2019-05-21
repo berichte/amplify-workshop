@@ -39,13 +39,13 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div style={{ paddingLeft: "10%" }}>
       {loading ? (
         <span>loading ...</span>
       ) : (
         coins.map((c, i) => (
-          <div key={i}>
-            <h2>{c.name}</h2>
+          <div stylekey={i}>
+            <h2>{`${i + 1}. ${c.name}`}</h2>
             <p>{c.price_usd}</p>
           </div>
         ))
