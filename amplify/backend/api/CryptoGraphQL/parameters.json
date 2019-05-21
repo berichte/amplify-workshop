@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "CryptoGraphQL",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitoda9363a0",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
