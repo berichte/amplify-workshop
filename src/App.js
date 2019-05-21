@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useEffect, useReducer } from "react";
 import { API } from "aws-amplify";
 import { withAuthenticator } from "aws-amplify-react";
@@ -20,7 +19,6 @@ const initState = {
 };
 
 function App() {
-  // const [coins, updateCoins] = useState([]);
   const [{ coins, loading }, dispatch] = useReducer(reducer, initState);
 
   async function getData() {
